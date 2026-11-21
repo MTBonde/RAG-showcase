@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="412" viewBox="0 0 800 412" role="img" aria-label="Where the answer is lost">
+<style>
+  .bg { fill: #ffffff; }
+  .series-0 { fill: #2f6f9f; }
+  .series-1 { fill: #2a8a86; }
+  .track { fill: #eef1f4; }
+  .label { fill: #1f2328; font: 14px Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  .label-strong { fill: #1f2328; font: 600 14px Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  .count { fill: #1f2328; font: 12px 'JetBrains Mono', ui-monospace, monospace; }
+  .title { fill: #1f2328; font: 600 16px Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  .legend { fill: #1f2328; font: 13px Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  .note { fill: #59636e; font: 12px Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  @media (prefers-color-scheme: dark) {
+    .bg { fill: #0d1117; }
+    .series-0 { fill: #4f9bd1; }
+    .series-1 { fill: #4fbdb8; }
+    .track { fill: #1c232c; }
+    .label, .label-strong, .count, .title, .legend { fill: #e6edf3; }
+    .note { fill: #9198a1; }
+  }
+</style>
+<rect class="bg" width="800" height="412" rx="8"/>
+<text class="title" x="20" y="34">Where the answer is lost</text>
+<rect class="series-0" x="20" y="52" width="14" height="14" rx="3"/>
+<text class="legend" x="40" y="64">Tuning set (24 questions)</text>
+<rect class="series-1" x="250" y="52" width="14" height="14" rx="3"/>
+<text class="legend" x="270" y="64">Check set (12 questions)</text>
+<text class="label" x="20" y="112">Questions</text>
+<rect class="track" x="290" y="92" width="300" height="14" rx="3"/>
+<rect class="series-0" x="290" y="92" width="300" height="14" rx="3"/>
+<text class="count" x="600" y="104">24 of 24</text>
+<rect class="track" x="290" y="110" width="300" height="14" rx="3"/>
+<rect class="series-1" x="290" y="110" width="300" height="14" rx="3"/>
+<text class="count" x="600" y="122">12 of 12</text>
+<text class="label" x="20" y="164">Right note among the best 50</text>
+<rect class="track" x="290" y="144" width="300" height="14" rx="3"/>
+<rect class="series-0" x="290" y="144" width="275" height="14" rx="3"/>
+<text class="count" x="600" y="156">22 of 24</text>
+<rect class="track" x="290" y="162" width="300" height="14" rx="3"/>
+<rect class="series-1" x="290" y="162" width="300" height="14" rx="3"/>
+<text class="count" x="600" y="174">12 of 12</text>
+<text class="label" x="20" y="216">Right note among the best 20</text>
+<rect class="track" x="290" y="196" width="300" height="14" rx="3"/>
+<rect class="series-0" x="290" y="196" width="250" height="14" rx="3"/>
+<text class="count" x="600" y="208">20 of 24</text>
+<rect class="track" x="290" y="214" width="300" height="14" rx="3"/>
+<rect class="series-1" x="290" y="214" width="300" height="14" rx="3"/>
+<text class="count" x="600" y="226">12 of 12</text>
+<text class="label" x="20" y="268">Right note among the best 5</text>
+<rect class="track" x="290" y="248" width="300" height="14" rx="3"/>
+<rect class="series-0" x="290" y="248" width="238" height="14" rx="3"/>
+<text class="count" x="600" y="260">19 of 24</text>
+<rect class="track" x="290" y="266" width="300" height="14" rx="3"/>
+<rect class="series-1" x="290" y="266" width="250" height="14" rx="3"/>
+<text class="count" x="600" y="278">10 of 12</text>
+<text class="label-strong" x="20" y="320">Right note inserted in the prompt</text>
+<rect class="track" x="290" y="300" width="300" height="14" rx="3"/>
+<rect class="series-0" x="290" y="300" width="138" height="14" rx="3"/>
+<text class="count" x="600" y="312">11 of 24</text>
+<rect class="track" x="290" y="318" width="300" height="14" rx="3"/>
+<rect class="series-1" x="290" y="318" width="200" height="14" rx="3"/>
+<text class="count" x="600" y="330">8 of 12</text>
+<text class="note" x="20" y="360">Candidates: the run with translation on, before the review fixes.</text>
+<text class="note" x="20" y="382">Last step: the current iteration, after the review fixes, reranker off.</text>
+</svg>

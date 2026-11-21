@@ -1,0 +1,139 @@
+{
+  "_note": "Aggregates only, no question text. Every number has its source and stage in stats/SOURCES.md.",
+  "funnel": {
+    "stage": "current iteration, part 3",
+    "candidates_measured_with": "translation on, before the review fixes",
+    "injected_measured_with": "the current iteration: translation on, reranker off, after the review fixes",
+    "step_labels": [
+      "Questions",
+      "Right note among the best 50",
+      "Right note among the best 20",
+      "Right note among the best 5",
+      "Right note inserted in the prompt"
+    ],
+    "sets": [
+      {
+        "label": "Tuning set",
+        "counts": [
+          24,
+          22,
+          20,
+          19,
+          11
+        ]
+      },
+      {
+        "label": "Check set",
+        "counts": [
+          12,
+          12,
+          12,
+          10,
+          8
+        ]
+      }
+    ]
+  },
+  "levers": {
+    "stage": "current iteration, part 3",
+    "tuned_questions": 24,
+    "heldout_questions": 12,
+    "tuned_negatives": 30,
+    "heldout_negatives": 8,
+    "steps": [
+      {
+        "label": "Starting point",
+        "tuned_right": 10,
+        "heldout_right": 5,
+        "tuned_false": 0,
+        "heldout_false": 2
+      },
+      {
+        "label": "With translation",
+        "tuned_right": 12,
+        "heldout_right": 8,
+        "tuned_false": 1,
+        "heldout_false": 1
+      },
+      {
+        "label": "Translation and reranker",
+        "tuned_right": 16,
+        "heldout_right": 8,
+        "tuned_false": 0,
+        "heldout_false": 1
+      },
+      {
+        "label": "Current iteration, reranker off",
+        "tuned_right": 11,
+        "heldout_right": 8,
+        "tuned_false": 0,
+        "heldout_false": 1
+      }
+    ]
+  },
+  "first_version": {
+    "stage": "first version, repaired eval",
+    "right_file_in_top_5": {
+      "hits": 8,
+      "of": 21
+    },
+    "said_found_on_ordinary_prompts": {
+      "hits": 19,
+      "of": 22
+    },
+    "seconds_per_search_typical": 10,
+    "seconds_per_search_after_boot": 244,
+    "model_download_gb": 2.2
+  },
+  "current_iteration": {
+    "stage": "current iteration, part 3",
+    "right_file_injected_tuned": {
+      "hits": 11,
+      "of": 24
+    },
+    "right_file_injected_heldout": {
+      "hits": 8,
+      "of": 12
+    },
+    "false_injections_tuned": {
+      "hits": 0,
+      "of": 30
+    },
+    "false_injections_heldout": {
+      "hits": 1,
+      "of": 8
+    },
+    "augment_median_seconds_tuned": 1.09,
+    "augment_median_seconds_heldout": 1.0,
+    "right_file_in_top_5_tuned": {
+      "hits": 19,
+      "of": 24,
+      "measured_with": "translation on, before the review fixes"
+    }
+  },
+  "keep_warm": {
+    "stage": "current iteration, part 2",
+    "first_prompt_seconds_before": 25.8,
+    "idle_before": "about two hours, no keep-warm",
+    "first_prompt_seconds_after": 1.85,
+    "idle_after": "60 minutes, keep-warm running"
+  },
+  "review_fixes": {
+    "stage": "current iteration, part 3",
+    "tuned_right_before": 12,
+    "tuned_right_after": 11,
+    "tuned_false_before": 1,
+    "tuned_false_after": 0,
+    "of_questions": 24,
+    "of_negatives": 30
+  },
+  "hook_budget_seconds": {
+    "total": 20,
+    "service": 19.5,
+    "history": [
+      2,
+      10,
+      20
+    ]
+  }
+}
